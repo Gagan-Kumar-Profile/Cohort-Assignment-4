@@ -1,0 +1,327 @@
+@font-face {
+    font-family: 'font';
+    src: url(./Sportsquake-8K1z.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  ;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.main {
+    gap: 10px;
+    padding: 20px 10%;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: "left-top left-top  center-top right"
+                         "left-top left-top  center-top right"
+                         "left-bottom center-bottom center-top right"
+                         "left-bottom  center-bottom right-bottom right-bottom"
+                         "left-bottom  center-bottom right-bottom right-bottom";
+    
+}
+
+.left-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    grid-area: left-top;
+    background-color: rgba(31, 29, 29, 0.575);
+}
+
+.left-top .img{
+    padding: 40px;
+    width: 50%;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.text-rotate{
+    background-color: #17171a;
+    border-radius: 20px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-rotate img{
+    width: 80%;
+    height: 100%;
+    border-radius: 35px;
+    object-fit: cover;
+}
+.left-top .text-rotate {
+    width: 50%;
+}
+
+.right {
+    width: 100%;
+    height: 100%;
+    grid-area: right;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;;
+}  
+
+.top-right-top{
+    color: white;
+    padding: 20px;
+    width: 100%;
+    height: 20%;
+    border-radius: 20px;
+    background-color: #3131b4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.top-right-top i {
+    font-size: 30px;
+}
+
+.top-right-top p {
+    font-size: 8px;
+}
+
+.top-right-bottom{
+    width: 100%;
+    height: 75%;
+    border-radius: 20px;
+    background-color: #17171a;;
+}
+
+.top-right-bottom img{
+    padding: 7px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #17171a;;
+}
+
+.left-bottom {
+    padding: 0 30px;
+    color: white;
+    grid-area: left-bottom;
+    border: 1px solid white;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+
+}
+
+.left-bottom h1 {
+    font-weight: 500;
+    text-align: left;
+    font-size: 100px;
+    font-family: font;
+}
+
+.left-bottom h4 {
+    font-weight: 600;
+    text-align: left;
+    color: blue;
+    
+}
+
+.left-bottom .bitcoin {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+.left-bottom .bitcoin i {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    font-size: 40px;
+}
+
+.left-bottom .barcode {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+
+
+.center-top {
+    grid-area: center-top;
+    padding: 30px;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    background-color:#17171a;
+}
+
+.center-top ul{
+
+    color: white;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 17px;
+    align-items: left;
+    font-weight: 500;
+}
+
+hr {
+    border-color: #1b1b1d;
+}
+
+.center-top ul li{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.center-top ul li:nth-child(4){
+    background-color: #1b1b1d;
+    padding: 8px 10px;
+    border-radius: 50px;
+}
+
+.center-top ul li i{
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.center-bottom {
+    height: 100%;
+    width: 100%;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    grid-area: center-bottom;
+}
+
+.center-bottom .center-b-t {
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    height: 50%;
+    background-color: #17171a;
+}
+
+.center-bottom .center-b-c {
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 40px;
+    border-radius: 20px;
+    color: beige;
+    width: 100%;
+    height: 20%;
+    background-color: #17171a;
+}
+.center-bottom .center-b-b {
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    height: 30%;
+    background-color: #d8f257;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+    gap: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.center-bottom .center-b-b .ri-qr-code-line{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 70px;
+}
+
+.center-bottom .center-b-b .qr-div p{
+font-size: 11px;
+}
+
+
+
+.right-bottom {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    grid-area: right-bottom;
+    background-color: rgb(253, 253, 253);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.r-b-l{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.r-b-r{
+    width: 30%;;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.r-b-r button{
+    width: fit-content;
+    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 9px;
+    border-radius: 20px;
+    border: none;
+    background-color: #4646bb;
+    color: white;
+    font-weight: 600;
+}
+.stars{
+    display: flex;
+    justify-content: space-evenly;
+    color: #c6ec09;
+    font-size: 25px;
+}
+.r-b-r h1{
+    font-size: 60px;
+}
+
